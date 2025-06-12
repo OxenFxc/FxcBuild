@@ -1,4 +1,4 @@
-name: oneplus_ace5_pro
+name: 一加ace5pro内核
 on:
   workflow_dispatch:
     inputs:
