@@ -1,4 +1,4 @@
-name: 一加ace5pro内核
+name: 星辰Star内核 （Ace5Pro）
 on:
   workflow_dispatch:
     inputs:
