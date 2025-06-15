@@ -262,13 +262,13 @@ jobs:
          sed -i 's/${scm_version}//' ./common/scripts/setlocalversion
          sudo sed -i 's/-4k/${{ github.event.inputs.KERNEL_SUFFIX }}/g' ./common/arch/arm64/configs/gki_defconfig
         
-      - name: Add sched_ext
+      - name: Add sched_ext(KernelF)
         if: ${{inputs.enable_feature_z }}
         run: |
          cd kernel_workspace/kernel_platform/
          git clone https://github.com/OxenFxc/KernelF.git
-         cp -r ./sched_ext/* ./common/kernel/sched
-         rm -rf ./sched_ext/.git
+         cp -r ./KernelF/* ./common/kernel/sched
+         rm -rf ./KernelF/.git
          cd common/kernel/sched  
 
       - name: Build Kernel
