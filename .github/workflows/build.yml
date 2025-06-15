@@ -266,7 +266,7 @@ jobs:
         if: ${{inputs.enable_feature_z }}
         run: |
          cd kernel_workspace/kernel_platform/
-         git clone https://github.com/OxenFxc/sched_ext.git
+         git clone https://github.com/OxenFxc/KernelF.git
          cp -r ./sched_ext/* ./common/kernel/sched
          rm -rf ./sched_ext/.git
          cd common/kernel/sched  
